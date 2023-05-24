@@ -90,7 +90,7 @@ export default function App() {
           preload="metadata"
         >
         <source src="${mainVideo}" type="video/mp4" />
-        </video>`,
+        </video>`
       }}
     />
   );
