@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Teknikaler';
+  src: url('/public/fonts/Teknikaler.ttf') format('truetype');
+  /* Add additional font files and formats if provided */
+  /* You may need to update the path based on your folder structure */
+}
+
+:root {
+  --white: #FFFFFF;
+  --light_grey_1: #A6A6A6;
+  --light_grey_2: #737373;
+  --medium_grey: #404040;
+  --dark_grey: #262626;
+  --black: #0D0D0D;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +21,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--dark_grey);
 }
 
 code {

@@ -1,0 +1,82 @@
+.dialog_wrapper {}
+
+.dialog_title {
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    font-family: 'Teknikaler', sans-serif !important;
+    font-size: 64px !important;
+}
+
+.form_wrapper {
+    /* margin: 20px; */
+}
+
+.input {
+    all: unset;
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    color: var(--white);
+    padding: 15px 30px;
+    width: 370px;
+}
+
+textarea {
+    border-radius: 20px !important;
+}
+
+.input::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+.submit_button {
+    background: var(--white);
+    width: 430px;
+    padding: 15px 30px;
+    background: var(--white);
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.35s;
+    cursor: pointer;
+}
+
+.submit_button:hover {
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 768px) {
+    .dialog_title {
+        font-size: 36px !important;
+    }
+
+    .input {
+        width: 250px;
+    }
+
+    .submit_button {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .dialog_title {
+        font-size: 28px !important;
+    }
+
+    .input {
+        width: 200px;
+        padding: 10px 30px;
+    }
+
+    .submit_button {
+        width: 260px;
+    }
+}
