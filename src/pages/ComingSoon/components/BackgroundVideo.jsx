@@ -5,7 +5,7 @@ import images from "../../../constants";
 const BackgroundVideo = () => {
   return (
     <div className={styles.background_video}>
-      <video autoPlay={true} loop={true} muted={true} playsinline={true}>
+      <video autoPlay loop muted playsinline>
         <source src={images.background_video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
