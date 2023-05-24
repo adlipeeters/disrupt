@@ -73,6 +73,7 @@
 .countdown_container {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 5px;
 }
@@ -129,7 +130,7 @@
     }
 
     .countdown_name {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
@@ -169,8 +170,8 @@
     }
 
     .countdown_box {
-        min-width: 65px;
-        min-height: 65px;
+        min-width: 75px;
+        min-height: 75px;
     }
 
     .countdown_wrapper {
@@ -178,7 +179,7 @@
     }
 
     .countdown_name {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .hero_button {
