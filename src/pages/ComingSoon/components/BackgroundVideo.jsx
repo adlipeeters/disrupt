@@ -77,11 +77,11 @@ export default function App() {
   return shouldUseImage ? (
     <img src={mainVideo} alt="Muted Video" />
   ) : (
-    <div
-      className={styles.background_video}
-      ref={videoParentRef}
-      dangerouslySetInnerHTML={{
-        __html: `
+    <div className={styles.background_video}>
+      <div
+        ref={videoParentRef}
+        dangerouslySetInnerHTML={{
+          __html: `
         <video
           loop
           muted
@@ -91,7 +91,8 @@ export default function App() {
         >
         <source src="${mainVideo}" type="video/mp4" />
         </video>`,
-      }}
-    />
+        }}
+      />
+    </div>
   );
 }
