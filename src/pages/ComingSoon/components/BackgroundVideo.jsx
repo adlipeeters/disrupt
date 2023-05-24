@@ -69,7 +69,7 @@ export default function App() {
                 setShouldUseImage(true);
               });
           }
-        }, 0);
+        }, 0)
       }
     }
   }, []);
