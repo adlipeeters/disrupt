@@ -16,9 +16,10 @@ const BackgroundVideo = () => {
         loop={true}
         muted={true}
         playsinline={true}
+        src={images.background_video}
       >
-        <source src={images.background_video} type="video/mp4" />
-        Your browser does not support the video tag.
+        {/* <source src={images.background_video} type="video/mp4" />
+        Your browser does not support the video tag. */}
       </video>
     </div>
   );
