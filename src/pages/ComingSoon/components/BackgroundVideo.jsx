@@ -36,7 +36,7 @@ const isSafari = () => {
 
 const mainVideo = images.background_video;
 
-export default function App() {
+export default function BackgroundVideo() {
   const videoParentRef = useRef();
   const [shouldUseImage, setShouldUseImage] = useState(false);
   useEffect(() => {
@@ -69,7 +69,7 @@ export default function App() {
                 setShouldUseImage(true);
               });
           }
-        }, 0)
+        }, 0);
       }
     }
   }, []);
@@ -90,7 +90,7 @@ export default function App() {
           preload="metadata"
         >
         <source src="${mainVideo}" type="video/mp4" />
-        </video>`
+        </video>`,
       }}
     />
   );
