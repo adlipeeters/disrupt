@@ -1,6 +1,4 @@
 // import React from "react";
-import styles from "../style.module.css";
-import images from "../../../constants";
 
 // const BackgroundVideo = () => {
 //   const videoRef = React.useRef(null);
@@ -28,6 +26,8 @@ import images from "../../../constants";
 // export default BackgroundVideo;
 
 import React, { useRef, useState, useEffect } from "react";
+import styles from "../style.module.css";
+import images from "../../../constants";
 
 const isSafari = () => {
   const ua = navigator.userAgent.toLowerCase();
@@ -77,8 +77,9 @@ export default function App() {
   return shouldUseImage ? (
     <img src={mainVideo} alt="Muted Video" />
   ) : (
-    <div className={styles.background_video}>
+    <div>
       <div
+        className={styles.background_video}
         ref={videoParentRef}
         dangerouslySetInnerHTML={{
           __html: `
