@@ -75,25 +75,14 @@ export default function App() {
   }, []);
 
   return shouldUseImage ? (
-    <img src={mainVideo} alt="Muted Video" />
+    <div></div>
   ) : (
     <div
-      // className={styles.background_video}
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100%",
-        zIndex: -2,
-      }}
+      className={styles.background_video}
       ref={videoParentRef}
       dangerouslySetInnerHTML={{
         __html: `
         <video
-        style=" width: 100%;
-    height: 100%;
-    object-fit: cover;"
           loop
           muted
           autoplay
